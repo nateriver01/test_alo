@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Exo-Regular.ttf">
+            <string>Exo-Regular</string>
+        </array>
+        <array key="Exo2-Bold.otf">
+            <string>Exo2-Bold</string>
+        </array>
+        <array key="Exo2-Regular.otf">
+            <string>Exo2-Regular</string>
+        </array>
+        <array key="Exo2-SemiBold.otf">
+            <string>Exo2-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginID" id="BYZ-38-t0r" customClass="LoginVC" customModule="testAlo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="961-Sk-NB7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Sekarang" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pC4-ue-hTZ">
+                                <rect key="frame" x="0.0" y="134" width="414" height="21"/>
+                                <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0Z-Xa-sKE" customClass="CustomButton" customModule="testAlo">
+                                <rect key="frame" x="20" y="413" width="374" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="0.97999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4JP-eR-bSG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="0.97999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="topGradientColor">
+                                        <color key="value" red="0.34500526005102461" green="0.40182292847439938" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomGradientColor">
+                                        <color key="value" red="0.1716192027574571" green="0.77196565094131586" blue="0.78389209508895874" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submitLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6nO-zw-g8f"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Masukkan Username dan Password Anda yang telah didaftarkan)" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQP-m9-RWB">
+                                <rect key="frame" x="62" y="365" width="290" height="28"/>
+                                <fontDescription key="fontDescription" name="Exo-Regular" family="Exo" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hd7-jJ-xay">
+                                <rect key="frame" x="20" y="195" width="374" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkY-Pg-Mva">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
+                                        <fontDescription key="fontDescription" name="Exo2-SemiBold" family="Exo 2" pointSize="17"/>
+                                        <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dv5-zx-b5w" userLabel="Username" customClass="VSTextField" customModule="testAlo">
+                                        <rect key="frame" x="0.0" y="30" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="cIU-r6-2wV"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nomor HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjn-eR-Jfi">
+                                        <rect key="frame" x="0.0" y="80" width="374" height="20"/>
+                                        <fontDescription key="fontDescription" name="Exo2-SemiBold" family="Exo 2" pointSize="17"/>
+                                        <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="68P-6I-UdO" userLabel="Password" customClass="VSTextField" customModule="testAlo">
+                                        <rect key="frame" x="0.0" y="110" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Fdh-zU-dH2"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pC4-ue-hTZ" firstAttribute="leading" secondItem="XxV-Qz-RQ5" secondAttribute="leading" id="2fK-Z2-SKD"/>
+                            <constraint firstItem="pC4-ue-hTZ" firstAttribute="top" secondItem="XxV-Qz-RQ5" secondAttribute="top" constant="90" id="AGj-TY-WGA"/>
+                            <constraint firstItem="XxV-Qz-RQ5" firstAttribute="trailing" secondItem="gQP-m9-RWB" secondAttribute="trailing" constant="62" id="Df4-GS-UsB"/>
+                            <constraint firstItem="hd7-jJ-xay" firstAttribute="leading" secondItem="XxV-Qz-RQ5" secondAttribute="leading" constant="20" id="Gy1-dA-2er"/>
+                            <constraint firstItem="XxV-Qz-RQ5" firstAttribute="trailing" secondItem="hd7-jJ-xay" secondAttribute="trailing" constant="20" id="I8l-yr-VtQ"/>
+                            <constraint firstItem="gQP-m9-RWB" firstAttribute="leading" secondItem="XxV-Qz-RQ5" secondAttribute="leading" constant="62" id="SHG-VG-GOx"/>
+                            <constraint firstItem="XxV-Qz-RQ5" firstAttribute="trailing" secondItem="j0Z-Xa-sKE" secondAttribute="trailing" constant="20" id="WjF-1i-xlw"/>
+                            <constraint firstItem="pC4-ue-hTZ" firstAttribute="trailing" secondItem="XxV-Qz-RQ5" secondAttribute="trailing" id="bcz-Rf-n8m"/>
+                            <constraint firstItem="hd7-jJ-xay" firstAttribute="top" secondItem="pC4-ue-hTZ" secondAttribute="bottom" constant="40" id="eYJ-Lb-3Fh"/>
+                            <constraint firstItem="j0Z-Xa-sKE" firstAttribute="top" secondItem="gQP-m9-RWB" secondAttribute="bottom" constant="20" id="pPt-Gz-GCi"/>
+                            <constraint firstItem="gQP-m9-RWB" firstAttribute="top" secondItem="hd7-jJ-xay" secondAttribute="bottom" constant="20" id="r6a-V8-rrw"/>
+                            <constraint firstItem="j0Z-Xa-sKE" firstAttribute="leading" secondItem="XxV-Qz-RQ5" secondAttribute="leading" constant="20" id="uWk-XY-Gjl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XxV-Qz-RQ5"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnLogin" destination="j0Z-Xa-sKE" id="tkI-wB-gZd"/>
+                        <outlet property="tfPassword" destination="68P-6I-UdO" id="rDF-Eh-iux"/>
+                        <outlet property="tfUsername" destination="dv5-zx-b5w" id="ZQW-94-Vww"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
+        </scene>
+    </scenes>
+</document>
